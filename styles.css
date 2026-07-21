@@ -1,66 +1,109 @@
+<<<<<<< HEAD
 :root{
     /* Fondos */
     --background: #FEEFD1;
     --surface: #FDE0B1;
-
-    /* Colores principales */
-    --primary: #E52229;
-    --secondary: #033A6A;
-    --accent: #F4AC32;
-
-    /* Complementarios */
-    --orange: #ED9B5C;
-    --coral: #EB6E52;
-    --terracotta: #DA6136;
-    --brown: #9C6428;
-
-    /* Texto */
-    --text: #1D1716;
-    --text-light: #FFF8EC;
-
-    /* Extras */
-    --border: #E8C98C;
+=======
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+>>>>>>> fdeddba9b386c64176e31af39df77371e66a2506
 
 body{
-    background: var(--background);
-    color: var(--text);
-    font-family: "Poppins", sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#FFF8E7,#F3E460);
+    color:#333;
+    min-height:100vh;
 }
 
 header{
-    background: var(--primary);
-    color: white;
+    background:#ffffff;
+    padding:25px 40px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#e67e22;
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:120px auto 40px;
+}
+
+section{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+h1{
+    color:#d35400;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#e67e22;
+    margin-bottom:15px;
+}
+
+p{
+    line-height:1.8;
+}
+
+img{
+    width:100%;
+    border-radius:15px;
 }
 
 button{
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    transition: .3s;
+    background:#f39c12;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-    background: var(--orange);
+    background:#d68910;
 }
 
-.card{
-    background: var(--surface);
-    border: 2px solid var(--accent);
-    border-radius: 16px;
-    padding: 20px;
-}
-
-h1,h2{
-    color: var(--secondary);
-}
-
-a{
-    color: var(--primary);
-}
-
-a:hover{
-    color: var(--terracotta);
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:10px;
 }
