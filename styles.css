@@ -15,7 +15,11 @@ header{
     background:#ffffff;
     padding:25px 40px;
     box-shadow:0 5px 20px rgba(0,0,0,.1);
-    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 }
 
 nav{
@@ -44,7 +48,7 @@ nav a:hover{
 main{
     width:90%;
     max-width:1200px;
-    margin:40px auto;
+    margin:120px auto 40px;
 }
 
 section{
@@ -81,6 +85,7 @@ button{
     padding:14px 30px;
     border-radius:10px;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
