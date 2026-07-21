@@ -12,41 +12,47 @@ body{
 }
 
 header{
+    width:100%;
     background:#fff;
-    padding:20px 40px;
     position:fixed;
     top:0;
     left:0;
-    width:100%;
     box-shadow:0 5px 20px rgba(0,0,0,.1);
     z-index:1000;
 }
 
 .navbar{
-    max-width:1200px;
-    margin:auto;
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    flex:1;
 }
 
 .logo a{
     text-decoration:none;
-    color:#d35400;
     font-size:30px;
     font-weight:bold;
+    color:#d35400;
 }
 
 .menu{
+    flex:1;
     display:flex;
+    justify-content:flex-end;
+    gap:40px;
     list-style:none;
-    gap:25px;
 }
 
 .menu a{
     text-decoration:none;
     color:#333;
     font-weight:bold;
+    font-size:18px;
     transition:.3s;
 }
 
@@ -60,11 +66,12 @@ main{
     margin:120px auto 40px;
 }
 
-section{
+.inicio{
     background:#fff;
-    padding:40px;
     border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    margin-bottom:40px;
 }
 
 .contenido{
@@ -77,46 +84,46 @@ section{
 
 .texto{
     flex:1;
-    min-width:300px;
+    min-width:320px;
+}
+
+.texto h1{
+    color:#d35400;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.texto h2{
+    color:#e67e22;
+    margin:25px 0 15px;
+}
+
+.texto p{
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+.texto ul{
+    margin-left:20px;
+    margin-bottom:30px;
+}
+
+.texto li{
+    margin-bottom:10px;
 }
 
 .imagen{
     flex:1;
-    min-width:300px;
     text-align:center;
+    min-width:320px;
 }
 
 .imagen img{
     width:100%;
     max-width:500px;
     border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.2);
-}
-
-h1{
-    color:#d35400;
-    margin-bottom:20px;
-    font-size:42px;
-}
-
-h2{
-    color:#e67e22;
-    margin:25px 0 15px;
-}
-
-p{
-    line-height:1.8;
-    margin-bottom:15px;
-    text-align:justify;
-}
-
-ul{
-    margin-left:20px;
-    margin-bottom:25px;
-}
-
-li{
-    margin-bottom:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .boton{
@@ -132,36 +139,40 @@ li{
 
 .boton:hover{
     background:#d68910;
-    transform:translateY(-2px);
 }
 
-button{
-    background:#f39c12;
-    color:#fff;
-    border:none;
-    padding:14px 30px;
-    border-radius:10px;
-    cursor:pointer;
+.articulos{
+    margin-top:40px;
+}
+
+.articulos h2{
+    text-align:center;
+    color:#d35400;
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.articulo{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
     transition:.3s;
 }
 
-button:hover{
-    background:#d68910;
+.articulo:hover{
+    transform:translateY(-5px);
 }
 
-input,
-textarea{
-    width:100%;
-    padding:14px;
-    margin:10px 0 20px;
-    border:1px solid #ccc;
-    border-radius:10px;
-    outline:none;
+.articulo h3{
+    color:#e67e22;
+    margin-bottom:15px;
 }
 
-input:focus,
-textarea:focus{
-    border-color:#e67e22;
+.articulo p{
+    line-height:1.8;
+    text-align:justify;
 }
 
 #footer{
@@ -179,8 +190,7 @@ textarea:focus{
 
 #footer ul{
     list-style:none;
-    margin:0 0 20px;
-    padding:0;
+    margin-bottom:20px;
 }
 
 #footer li{
@@ -189,51 +199,54 @@ textarea:focus{
 
 #footer p{
     margin-bottom:10px;
-    text-align:center;
+    line-height:1.6;
 }
 
 @media(max-width:768px){
 
-    header{
-        padding:15px 20px;
-    }
-
     .navbar{
         flex-direction:column;
+        padding:20px;
         gap:20px;
     }
 
+    .logo{
+        flex:none;
+    }
+
     .menu{
+        flex:none;
         flex-direction:column;
+        justify-content:center;
         align-items:center;
+        gap:15px;
+    }
+
+    main{
+        margin-top:180px;
     }
 
     .contenido{
         flex-direction:column;
-        text-align:center;
     }
 
     .texto{
-        order:2;
+        text-align:center;
     }
 
-    .imagen{
-        order:1;
-    }
-
-    h1{
+    .texto h1{
         font-size:32px;
     }
 
-    section{
-        padding:25px;
-    }
-
-    main{
-        margin-top:170px;
-    }
-
-    p{
+    .texto p{
         text-align:left;
+    }
+
+    .texto ul{
+        text-align:left;
+    }
+
+    .imagen img{
+        max-width:100%;
     }
 }
