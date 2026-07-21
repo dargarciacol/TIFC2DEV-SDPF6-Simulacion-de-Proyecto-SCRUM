@@ -1,0 +1,39 @@
+#footer {
+    background-color: #033A6A; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+#footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #F4AC32;
+}
+
+#footer ul {
+    list-style: none; /* Quita las viñetas */
+    padding: 0;
+    margin: 20px 0;
+}
+
+#footer li {
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+#footer p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+#footer strong {
+    color: #F4AC32;
+}
+
+#footer li:hover {
+    color: #F4AC32;
+    cursor: default;
+    transition: 0.3s;
+}
